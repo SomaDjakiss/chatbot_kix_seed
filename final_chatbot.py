@@ -3,12 +3,8 @@ import re
 import streamlit as st
 from collections import defaultdict
 from itertools import islice
-#from langchain.chains import ConversationalRetrievalChain
-#from langchain.chains.question_answering import load_qa_chain
-#from langchain.prompts import PromptTemplate
 from langchain_community.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
-#from langchain.memory import ConversationBufferMemory
 from dotenv import load_dotenv
 from langchain.chat_models import ChatOpenAI
 from RGA_TEST_SQL import get_df_merge_final
