@@ -3,7 +3,7 @@ import re
 import streamlit as st
 from collections import defaultdict
 from itertools import islice
-from langchain_core.prompts import PromptTemplate
+from langchain.prompts.chat import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 from langchain.chat_models import ChatOpenAI
 from proccessing import get_df_merge_final
@@ -29,7 +29,7 @@ llm = ChatOpenAI(
 )
 
 # Prompt template
-prompt_template = PromptTemplate(
+prompt_template = ChatPromptTemplate(
     input_variables=["question", "donnees"],
     template="""
 Tu es un expert en analyse pédagogique,  conçue pour fournir des réponses précises, structurées et basées sur des données scolaires.
