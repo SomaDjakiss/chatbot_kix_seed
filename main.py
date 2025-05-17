@@ -3,7 +3,7 @@ import re
 import streamlit as st
 from collections import defaultdict
 from itertools import islice
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
 from langchain.chat_models import ChatOpenAI
 from proccessing import get_df_merge_final
